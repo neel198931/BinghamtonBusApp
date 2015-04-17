@@ -1,7 +1,5 @@
 BinghamtonBusApp::Application.routes.draw do
-  get 'location/index', to: 'location#index'
-  post 'location/index', to: 'location#create'
-  get 'location/new', to: 'location#new'
+  get "location/index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

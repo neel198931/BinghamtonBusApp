@@ -1,0 +1,49 @@
+<h1>Binghamton Bus App</h1>
+<h3>Enter your Location </h3>
+
+<%= form_tag("/location/index", method: "post") do %>
+<h5>Current Address </h5>
+<%= label_tag :longitude %><br>
+<%= text_field_tag :longitude %>
+<br>
+<%= label_tag :latitude %><br>
+<%= text_field_tag :latitude %>
+<br>
+
+<h5>Destination Address </h5>
+<%= label_tag :longitude %><br>
+<%= text_field_tag :destlongitude %>
+<br>
+<%= label_tag :latitude %><br>
+<%= text_field_tag :destlatitude %>
+<br>
+
+<p>
+<%= submit_tag("Submit") %>
+</p>
+
+<% end %>
+
+
+
+
+<!-- Display The name of the Bus stops closest to the entered coordinates -->
+<% if @curstops %>
+<%= "Current Stop: #{@curstops[0].name}" %><br><br>
+<% end %>
+
+<% if @deststops %>
+<%= "Destination Stop: #{@deststops[0].name}" %><br><br>
+<% end %>
+
+
+
+
+
+<% if @size %>
+<% @size.times do |i| %>
+<p>
+<%= "#{@buses[i]} is arriving at #{@times[i]}" %><br>
+</p>
+<% end %>
+<% end %>

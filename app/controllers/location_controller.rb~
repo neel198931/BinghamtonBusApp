@@ -1,0 +1,18 @@
+class LocationController < ApplicationController
+  def new
+  end
+
+  def create
+    curlong = params[:longitude]
+    curlat  = params[:latitude]
+    destlong = params[:destlongitude]
+    destlat = params[:destlatitude]
+
+      render :index
+  end
+  
+
+  def index
+  end
+  
+end
