@@ -1,6 +1,6 @@
 == Welcome to the Binghamton Bus Application ==
 
-The purpose of this web appliacation is to provide a convinent way for Binghamton Students to get the list of Buses from their current location to a desired destination location.
+The purpose of this web appliacation is to provide a convinent way for Binghamton Students to get the list of Buses from their current location to a desired destination location. This is an open source project and is easily extendable for anyone wishing to use it for any transit service.
 
 
 Features Added
