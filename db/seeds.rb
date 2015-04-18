@@ -32,7 +32,7 @@ busId = 1
 stopId = 1
 arrival_list.each do |time|
 	sched = Schedule.new
-	sched.arrival = time
+	sched.arrival_time = time
     bus = Bus.find(busId)
     stop = Stop.find(stopId)
     bus.schedules << sched
@@ -45,7 +45,7 @@ busId = 2
 stopId = 1
 arrival_list1.each do |time|
 	sched = Schedule.new
-	sched.arrival = time
+	sched.arrival_time = time
     bus = Bus.find(busId)
     stop = Stop.find(stopId)
     bus.schedules << sched
@@ -56,7 +56,7 @@ busId = 1
 stopId = 3
 arrival_list2.each do |time|
 	sched = Schedule.new
-	sched.arrival = time
+	sched.arrival_time = time
     bus = Bus.find(busId)
     stop = Stop.find(stopId)
     bus.schedules << sched
@@ -67,7 +67,7 @@ busId = 2
 stopId = 3
 arrival_list3.each do |time|
 	sched = Schedule.new
-	sched.arrival = time
+	sched.arrival_time = time
     bus = Bus.find(busId)
     stop = Stop.find(stopId)
     bus.schedules << sched

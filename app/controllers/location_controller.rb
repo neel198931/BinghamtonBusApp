@@ -29,7 +29,7 @@ class LocationController < ApplicationController
     @times = Array.new
     @possible_buses_times.each do|sched|
     	temp = Schedule.find(sched)
-    	@times.push(temp.arrival)
+    	@times.push(temp.arrival_time)
     end
 
    
